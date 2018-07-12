@@ -13,11 +13,11 @@ const port = process.env.PORT || 3000;
 //   next();
 // });
 
-app.get('', (req, res) => {
-  res.render('index.html');
+app.get('/', (req, res) => {
+  res.sendFile('index.html');
 })
 
-app.post('', (req, res) => {
+app.post('/', (req, res) => {
   try {
     const transporter = nodemailer.createTransport({
       service: 'Mailgun',
