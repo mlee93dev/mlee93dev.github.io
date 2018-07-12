@@ -4,6 +4,7 @@
   "description": "Welcome to my portfolio website. This site was based on the template 'Dimension' provided free for personal use by html5up.net by ajlkn.",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "nodemailer": "^4.6.7"
   },

@@ -1,21 +1,14 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
 let app = express();
 
 const port = process.env.PORT || 3000;
 
-// app.use(function (req, res, next) {
-//   res.header('Access-Control-Allow-Origin', '*');
-//   res.header('Access-Control-Expose-Headers', 'x-auth');
-//   res.header('Access-Control-Allow-Headers', 'Origin, x-auth, X-Requested-With, Content-Type, Accept');
-//   res.header('Access-Control-Allow-Methods', 'POST, DELETE, OPTIONS');
-//   next();
-// });
-
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + 'index.html'));
-})
+app.use(express.static(__dirname));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.post('/', (req, res) => {
   try {
@@ -27,12 +20,10 @@ app.post('/', (req, res) => {
       }
     });
     const mailOptions = {
-      from: 'markleedev1933@gmail.com',
-      to: user.email,
-      subject: 'PwKeychain Password Reset',
-      text: `Please click the following link to reset your password: \n
-        https://${req.headers.host}/reset/${token} \n
-        If you did not request this, please ignore this email and your password will remain unchanged.`
+      from: req.body.email,
+      to: 'mark.lee1933@gmail.com',
+      subject: `Portfolio Website Message from ${req.body.name}`,
+      text: req.body.message
     };
     
     transporter.sendMail(mailOptions, function(error, info) {
