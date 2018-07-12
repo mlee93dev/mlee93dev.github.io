@@ -1,0 +1,28 @@
+{
+  "name": "mlee93dev.github.io",
+  "version": "1.0.0",
+  "description": "Welcome to my portfolio website. This site was based on the template 'Dimension' provided free for personal use by html5up.net by ajlkn.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "10.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlee93dev/mlee93dev.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlee93dev/mlee93dev.github.io/issues"
+  },
+  "homepage": "https://github.com/mlee93dev/mlee93dev.github.io#readme"
+}

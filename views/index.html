@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mark Lee | Developer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-diamond"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Mark Lee</h1>
+								<p>Full stack web apps.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#about">About</a></li>
+								<li><a href="#portfolio">Portfolio</a></li>
+								<li><a href="https://mlee93dev.github.io/resume.pdf">Resume</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<p>
+									I'm a web developer with a strong passion in UX design. I love creating efficient solutions that prioritize functionality and useability.
+								</p>
+								<p>
+									I graduated in 2016 with a BS in Electrical Engineering from Northeastern University with internships in EMC, Jacobs Kling-Stubbins, and Dynamo Micropower.
+									When I'm not coding you'll find me travelling the world, studying a spoken language, doing something basketball related or trying out new recipes to cook.
+								</p>
+							</article>
+
+						<!-- Portfolio -->
+							<article id="portfolio">
+								<h2 class="major">Portfolio</h2>
+								<h3>ALT Scheduler</h3>
+								<p>While I was working as a teacher in Japan, one of the first things that I recognized as inefficient was the scheduling / planning fax system. 
+									I quickly sought a solution and eventually built a web app that streamlines many of the processes of the old system whilest retaining a 
+									UI that closely resembles the faxes of old, the latter of which was crucial in vastly lowering the learning curve for my users. This was
+									especially important given that the typical user was not particularly comfortable or familiar with technology.
+								</p>
+								<p>
+									<span class="skills">HTML</span>
+									<span class="skills">CSS</span>
+									<span class="skills">Typescript</span>
+									<span class="skills">Angular</span>
+									<span class="skills">Firebase</span>
+									<span class="skills">Bootstrap</span>
+								</p>
+								<p>
+									<span class="skills">Amazon AWS</span></p>
+								<p>
+									<a href="http://alt-scheduler.s3-website-ap-northeast-1.amazonaws.com" class="applink">Try It <i class="fa fa-external-link"></i></a>
+									<a href="https://github.com/mlee93dev/alt-scheduler-alpha-v1.0" class="applink"><i class="fa fa-github"></i> Source Code</a>
+								</p>
+								
+								<h3>Password Keychain</h3>
+								<p>
+									My interest in learning the backend grew after coming across numerous limitations of Firebase. The Password Keychain App is the result of my attempt at
+									a password manager, helping solidfy knowledge in areas such as token authentication, email services, databases, encryption, and CORS.
+								</p>
+								<p>
+									<span class="skills">HTML</span>
+									<span class="skills">CSS</span>
+									<span class="skills">Javascript</span>
+									<span class="skills">Angular</span>
+									<span class="skills">Bootstrap</span>
+									<span class="skills">NodeJS</span>
+								</p>
+								<p>
+									<span class="skills">MongoDB</span>
+									<span class="skills">Heroku</span>
+									<span class="skills">Postman</span>
+									<span class="skills">Robo3T</span>
+									<span class="skills">Mailgun</span>
+								</p>
+								<p>
+									<a href="https://protected-woodland-32658.herokuapp.com/" class="applink">Try It <i class="fa fa-external-link"></i></a>
+									<a href="https://github.com/mlee93dev/pw-keychain-server" class="applink"><i class="fa fa-github"></i> Source Code (server)</a>
+									<a href="https://github.com/mlee93dev/pw-keychain-app" class="applink"><i class="fa fa-github"></i> Source Code (client)</a>
+								</p>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form name="emailForm" onsubmit="myFunction()" method="post">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/mark-lee-1599b470/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/mlee93dev" class="icon fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright"></p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+			<script>
+				let form = document.emailForm;
+
+				function myFunction(){
+					const name = form.name.value;
+					const email = form.email.value;
+					const message = form.message.value;
+
+					alert(name + '/n' + email + '/n' + message);
+				}
+			</script>
+
+	</body>
+</html>
