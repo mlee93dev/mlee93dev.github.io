@@ -1639,6 +1639,12 @@ input, select, textarea {
 
 /* Portfolio*/
 
+	.skills-list{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
 	.skills{
 		border-radius: 4px;
 		border: solid 2px orange;
